@@ -5,7 +5,6 @@ const checkNew = async (locations: LocationsManager, client: Client, guildSettin
     const res = await locations.checkNewLocations();
 
     if (typeof res === 'string') {
-        console.log(res);
         process.exit();
     }
     if (res.length !== 0) {

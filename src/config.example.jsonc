@@ -1,0 +1,7 @@
+{
+    "devMode": false, // if true, only responsds in dev server
+    "discordToken": "abc123",
+    "discordTokenDev": "abc123",
+    "devServer": "server id",
+    "checkInterval": "30" // how frequently (minutes) to check for updates
+}
