@@ -1,0 +1,26 @@
+{
+    "name": "nzcovidbot",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./build/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node .",
+        "build": "tsc",
+        "dev": "nodemon ./src/index.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "discord.js": "^13.1.0",
+        "moment": "^2.29.1",
+        "node-cron": "^3.0.0",
+        "node-fetch": "^2.6.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12",
+        "ts-node": "^10.2.1",
+        "typescript": "^4.3.5"
+    }
+}
