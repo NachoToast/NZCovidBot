@@ -122,7 +122,6 @@ class LocationsManager {
             // do ID first because we don't want to enforce lowercase on searchValue when searching by ID
             if (searchKey === 'Id') {
                 // so does id
-                console.log(searchValue, typeof searchValue);
                 if (typeof searchValue !== 'string' /*  || searchValue.length != 15 */) return 'Invalid ID';
                 return this.locations.filter(({ properties: { id } }) => id === searchValue);
             }
@@ -204,10 +203,11 @@ class LocationsManager {
                 //
                 const valueToSearch = searchValue; // putting searchValue in directly gives me an error :/
                 return this.locations.filter(
-                    ({ properties }) =>
-                        properties?.Event?.toLowerCase()?.includes(valueToSearch) ||
-                        properties?.Location?.toLowerCase()?.includes(valueToSearch) ||
-                        properties?.City?.toLowerCase()?.includes(valueToSearch)
+                    ({ properties: { Event, Location, City, id } }) =>
+                        Event?.toLowerCase()?.includes(valueToSearch) ||
+                        Location?.toLowerCase()?.includes(valueToSearch) ||
+                        City?.toLowerCase()?.includes(valueToSearch) ||
+                        id?.toLowerCase()?.includes(valueToSearch)
                 );
             }
 
@@ -223,7 +223,7 @@ class LocationsManager {
         }
     }
 
-    private static stringToMoment(input: string): string {
+    private static stringToMoment(input: string, includesHour?: true): string {
         let [day, month, year] = input
             .slice(0, 10)
             .split(/[/-]/)
@@ -233,7 +233,14 @@ class LocationsManager {
             day = year;
             year = temp;
         }
-        const date = new Date(year, month - 1, day);
+        let date;
+        if (includesHour === true) {
+            let [hour, minute, second] = input
+                .split(' ')[1]
+                .split(':')
+                .map((e) => Number(e));
+            date = new Date(year, month - 1, day, hour, minute, second);
+        } else date = new Date(year, month - 1, day);
         return moment(date).fromNow();
     }
 
@@ -273,7 +280,7 @@ class LocationsManager {
 
         if (data?.Added !== undefined && data?.Added !== '') {
             embed.setFooter(
-                `Added ${this.stringToMoment(data.Added)} (${data.Added})`,
+                `Added ${this.stringToMoment(data.Added, true)} (${data.Added})`,
                 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
             );
         } else

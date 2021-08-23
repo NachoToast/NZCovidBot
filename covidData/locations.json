@@ -2,6 +2,166 @@
     {
         "type": "Feature",
         "properties": {
+            "id": "a0l4a0000004G7C",
+            "Event": "AUT City campus 13/8/2021",
+            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "13/08/2021, 8:00 am",
+            "End": "13/08/2021, 4:00 pm",
+            "Advice": "All at 10am-12pm WF313 COMP501/52 Computing Technology in Society & 3-4pm WG403 COMP500/51 Programming 1 will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.76675831385697,
+                -36.85266588981399
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004G6x",
+            "Event": "AUT City campus 12/8/2021",
+            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "12/08/2021, 9:00 am",
+            "End": "12/08/2021, 8:30 pm",
+            "Advice": "All at 2-5pm WZ514 COMP500/51 Programming 1 will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7668242294008,
+                -36.85259409577806
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004G6n",
+            "Event": "AUT City campus 11/8/2021",
+            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "11/08/2021, 9:30 am",
+            "End": "11/08/2021, 8:30 pm",
+            "Advice": "All at 3-5pm WA220 COMP501/52 Computing Technology in Society and 5-8pm WG707/708 DIGD507/51 Mahi tahi will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.76675854868665,
+                -36.852590720762066
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GbR",
+            "Event": "AUT City Campus 17/08/21",
+            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "17/08/2021, 11:40 am",
+            "End": "17/08/2021, 5:00 pm",
+            "Advice": "All at AUT City Campus, Tech Central, WA4 11.40am-3pm or in Paper PSYC781, Lecture Theatre WG801/802 2-5pm Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure.Call Healthline for what to do next",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.76681690969204,
+                -36.85263400383534
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GbX",
+            "Event": "AUT North Campus 16/08/21",
+            "Location": "90 Akoranga Drive, Northcote, Auckland 0627",
+            "City": "Auckland",
+            "Start": "16/08/2021, 10:40 am",
+            "End": "16/08/2021, 4:00 pm",
+            "Advice": "All at AUT North Campus, AL computer lab 10.40am-3pm or in Paper PSYC706, Lecture Theatre AA234 2.10pm-4pm Isolate at home for 14 days from date of last exposure. Test immediately,and on days 5 & 12 after last exposure.Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.755825,
+                -36.797444
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GWH",
+            "Event": "Building 260 Room 115 OGGB Fisher and Paykel lecture theatre Auckland Uni City Campus 13/8/21",
+            "Location": "12 Grafton Road, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "13/08/2021, 11:45 am",
+            "End": "13/08/2021, 2:00 pm",
+            "Advice": "All at Statistics 101; Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.77090510102616,
+                -36.85327835860417
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GXe",
+            "Event": "Level 3 Kate Edger Information Commons City Campus University of Auckland 16/08/2021",
+            "Location": "9 Symonds Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "16/08/2021, 12:30 pm",
+            "End": "16/08/2021, 1:30 pm",
+            "Advice": "All on level3: isolate 14 days from last exposure. Test immediately & on days 5 & 12 after last exposure. Call Healthline. All on other levels: self-monitor for symptoms for 14 days. Get a test and isolate until you get a negative test, if symptomatic",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.770018,
+                -36.852
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GBs",
+            "Event": "1841 Bar and Restaurant Johnsonville 17/08/21",
+            "Location": "1 Disraeli Street, Johnsonville, Wellington 6037",
+            "City": "Wellington",
+            "Start": "17/08/2021, 7:00 pm",
+            "End": "17/08/2021, 9:00 pm",
+            "Advice": "All staff & downstairs patrons isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Upstairs patrons self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.807501,
+                -41.225194
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "id": "a0l4a0000004Gax",
             "Event": "Chatters Laundromat Māngere 19/08/21",
             "Location": "5A Wanstead Way, Māngere, Auckland 2022",
@@ -22,20 +182,20 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004Gai",
-            "Event": "Countdown Manukau 19/08/21",
-            "Location": "652 Great South Road, Manukau, Auckland 2104",
+            "id": "a0l4a0000004GhF",
+            "Event": "Westside Fitness Henderson 11/08/21",
+            "Location": "21 Catherine Street, Henderson, Auckland 0612",
             "City": "Auckland",
-            "Start": "19/08/2021, 4:53 pm",
-            "End": "19/08/2021, 5:30 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
+            "Start": "11/08/2021, 5:30 pm",
+            "End": "11/08/2021, 7:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
         },
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.882,
-                -36.9872
+                174.632679,
+                -36.883188
             ]
         }
     },
@@ -102,26 +262,6 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004G6n",
-            "Event": "AUT City campus 11/8/2021",
-            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "11/08/2021, 9:30 am",
-            "End": "11/08/2021, 8:30 pm",
-            "Advice": "All at 3-5pm WA220 COMP501/52 Computing Technology in Society and 5-8pm WG707/708 DIGD507/51 Mahi tahi will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.76676920191335,
-                -36.85260796751686
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "id": "a0l4a0000004FBd",
             "Event": "Icco Sake Bar Auckland 11/08/2021",
             "Location": "601 New North Road, Morningside, Auckland 1021",
@@ -136,6 +276,146 @@
             "coordinates": [
                 174.736975,
                 -36.873569
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HP2",
+            "Event": "TAPAC The Auckland Performing Arts Centre Western Springs 13/08/2021",
+            "Location": "100 Motions Road, Western Springs, Auckland 1022",
+            "City": "Auckland",
+            "Start": "13/08/2021, 5:00 pm",
+            "End": "13/08/2021, 6:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.717832,
+                -36.862032
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HPR",
+            "Event": "Taco Bell Auckland CBD 10/08/2021",
+            "Location": "3 Shortland Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "10/08/2021, 12:30 pm",
+            "End": "10/08/2021, 1:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.766421,
+                -36.846572
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HPq",
+            "Event": "McDonalds Auckland CBD 10/08/2021",
+            "Location": "268 Queen Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "10/08/2021, 1:00 pm",
+            "End": "10/08/2021, 2:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.764041,
+                -36.851115
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HQ0",
+            "Event": "McDonalds New Lynn 10/08/2021",
+            "Location": "1 Memorial Drive, New Lynn, Auckland 0600",
+            "City": "Auckland",
+            "Start": "10/08/2021, 3:00 pm",
+            "End": "10/08/2021, 3:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.68352607471556,
+                -36.90824548251814
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HQK",
+            "Event": "Lynn Mall Shopping Centre New Lynn 10/08/2021",
+            "Location": "3058 Great North Road, New Lynn, Auckland 0600",
+            "City": "Auckland",
+            "Start": "10/08/2021, 3:00 pm",
+            "End": "10/08/2021, 6:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.68499,
+                -36.906516
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HPH",
+            "Event": "Charmate Restaurant Auckland CBD 10/08/2021",
+            "Location": "17 Swanson Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "10/08/2021, 11:45 am",
+            "End": "10/08/2021, 12:15 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.764469,
+                -36.845796
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HPW",
+            "Event": "Starbucks Auckland CBD 10/08/2021",
+            "Location": "220 Queen Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "10/08/2021, 12:45 pm",
+            "End": "10/08/2021, 1:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.765469,
+                -36.849304
             ]
         }
     },
@@ -174,8 +454,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.85949917293058,
-                -36.9575254736598
+                174.85948076081974,
+                -36.95755366258774
             ]
         }
     },
@@ -214,8 +494,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.6326524981838,
-                -36.882270125493385
+                174.63273745800524,
+                -36.88229935939342
             ]
         }
     },
@@ -234,28 +514,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.87401270637048,
-                -36.961627014859225
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GdD",
-            "Event": "Countdown Takanini 19/08/2021",
-            "Location": "228 Great South Road, Takanini, Takanini 2112",
-            "City": "Takanini",
-            "Start": "19/08/2021, 7:00 am",
-            "End": "19/08/2021, 7:10 am",
-            "Advice": "Casual Plus contact information for website   Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "2021-08-22 19:15:42"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.927509,
-                -37.048739
+                174.87397632602153,
+                -36.961565524799866
             ]
         }
     },
@@ -274,8 +534,28 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.63270383402605,
-                -36.88222630782707
+                174.63266993068655,
+                -36.88227707120453
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Gdh",
+            "Event": "Countdown Takanini 16/08/2021",
+            "Location": "228 Great South Road, Takanini, Auckland 2112",
+            "City": "Auckland",
+            "Start": "16/08/2021, 10:00 am",
+            "End": "16/08/2021, 10:10 am",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.92748599518518,
+                -37.048786417037114
             ]
         }
     },
@@ -294,8 +574,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76483526518237,
-                -36.850675581609835
+                174.76485611294086,
+                -36.85068089512101
             ]
         }
     },
@@ -356,6 +636,26 @@
             "coordinates": [
                 174.8689,
                 -37.0331
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HDz",
+            "Event": "Food Village Manurewa 12/08/21",
+            "Location": "235 Browns Road, Manurewa, Auckland 2102",
+            "City": "Auckland",
+            "Start": "12/08/2021, 10:00 am",
+            "End": "12/08/2021, 10:15 am",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.863558,
+                -37.018233
             ]
         }
     },
@@ -482,26 +782,6 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004GJr",
-            "Event": "Domestic Terminal Auckland Airport 15/08/2021",
-            "Location": "Ray Emery Drive, Māngere,",
-            "City": null,
-            "Start": "15/08/2021, 4:00 pm",
-            "End": "15/08/2021, 5:00 pm",
-            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.791,
-                -37.0064
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "id": "a0l4a0000004GK1",
             "Event": "BP Tokoroa 16/8/21",
             "Location": "32 Main Road, Tokoroa 3420",
@@ -542,6 +822,46 @@
     {
         "type": "Feature",
         "properties": {
+            "id": "a0l4a0000004HOx",
+            "Event": "Athletics Auckland Running Event Cornwall Park 14/08/2021",
+            "Location": "Cornwall Park, Green Lane West, Epsom, Auckland 1051",
+            "City": "Auckland",
+            "Start": "14/08/2021, 1:30 pm",
+            "End": "14/08/2021, 4:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7843,
+                -36.8972
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HOi",
+            "Event": "Trail Run Event Totara Park Auckland 15/08/2021",
+            "Location": "Totara Park, 90 Wairere Road, The Gardens, Auckland 2105",
+            "City": "Auckland",
+            "Start": "15/08/2021, 8:30 am",
+            "End": "15/08/2021, 2:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.912,
+                -37.0002
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "id": "a0l4a0000004G2l",
             "Event": "Won Sushi Donburi Auckland CBD 11/8/2021",
             "Location": "290 Queen Street, Auckland Central, Auckland 1010",
@@ -554,8 +874,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7648222715484,
-                -36.85071671552356
+                174.7648203230236,
+                -36.850734111370315
             ]
         }
     },
@@ -594,8 +914,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.87401057041595,
-                -36.961592795710075
+                174.87399602614354,
+                -36.96158179810298
             ]
         }
     },
@@ -634,8 +954,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.8729369033327,
-                -36.96209856656819
+                174.87291823568054,
+                -36.96206481988096
             ]
         }
     },
@@ -674,8 +994,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.87290402094516,
-                -36.96212853473091
+                174.87293839374738,
+                -36.96211883180732
             ]
         }
     },
@@ -694,8 +1014,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.85945029013664,
-                -36.957554929002434
+                174.8594583797858,
+                -36.9575219915671
             ]
         }
     },
@@ -742,6 +1062,46 @@
     {
         "type": "Feature",
         "properties": {
+            "id": "a0l4a0000004HDa",
+            "Event": "Pak n Save Clendon 17/08/2021",
+            "Location": "16 Robert Ross Place, Clendon Park, Auckland 2103",
+            "City": "Auckland",
+            "Start": "17/08/2021, 9:00 am",
+            "End": "17/08/2021, 11:00 am",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.866987,
+                -37.031993
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HDu",
+            "Event": "Countdown Manurewa 16/08/21",
+            "Location": "227 Browns Road, Manurewa, Auckland 2102",
+            "City": "Auckland",
+            "Start": "16/08/2021, 12:00 pm",
+            "End": "16/08/2021, 12:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.864831,
+                -37.017815
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "id": "a0l4a0000004HEE",
             "Event": "Mobil Blockhouse Bay Avondale 17/08/2021",
             "Location": "262 Blockhouse Bay Road, Avondale, Auckland 0600",
@@ -756,26 +1116,6 @@
             "coordinates": [
                 174.701837,
                 -36.906244
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004Ggg",
-            "Event": "Wellington Domestic Airport 19/08/2021",
-            "Location": "1 Stewart Duff Drive, Rongotai, Wellington 6022",
-            "City": "Wellington",
-            "Start": "19/08/2021, 5:30 pm",
-            "End": "19/08/2021, 6:15 pm",
-            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.80991882314012,
-                -41.33469592725089
             ]
         }
     },
@@ -834,28 +1174,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7329682836804,
-                -36.855277055606244
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GsI",
-            "Event": "Countdown Grey Lynn 18/08/2021",
-            "Location": "271 Richmond Road, Grey Lynn, Auckland 1022",
-            "City": "Auckland",
-            "Start": "18/08/2021, 4:55 pm",
-            "End": "18/08/2021, 5:30 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "2021-08-22 16:08:28"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.73183962328164,
-                -36.8543063317833
+                174.73294327141204,
+                -36.855245662021005
             ]
         }
     },
@@ -874,8 +1194,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49712313415984,
-                -36.760091658369475
+                175.49712378792174,
+                -36.76013964333935
             ]
         }
     },
@@ -894,8 +1214,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49768986992794,
-                -36.75954105182575
+                175.4976214407081,
+                -36.75949285606033
             ]
         }
     },
@@ -934,8 +1254,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49768470232772,
-                -36.75953641619157
+                175.4976865777356,
+                -36.759521823039734
             ]
         }
     },
@@ -974,8 +1294,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49703983754415,
-                -36.7600532627584
+                175.49703542101946,
+                -36.760113747348775
             ]
         }
     },
@@ -1034,8 +1354,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76387811132463,
-                -36.85148160231682
+                174.76386511600225,
+                -36.851552431325615
             ]
         }
     },
@@ -1054,8 +1374,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76392782111,
-                -36.85016222820726
+                174.76389440742744,
+                -36.85015846168289
             ]
         }
     },
@@ -1094,8 +1414,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.70558529845377,
-                -36.726833729266104
+                174.7055856563479,
+                -36.726813023269536
             ]
         }
     },
@@ -1174,8 +1494,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.70445665134127,
-                -36.80589417330674
+                174.7045284996143,
+                -36.80592746563805
             ]
         }
     },
@@ -1194,8 +1514,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.72504598062835,
-                -36.81132009756053
+                174.7250143833986,
+                -36.81131793458408
             ]
         }
     },
@@ -1254,8 +1574,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.72502385034147,
-                -36.81127207724101
+                174.72498325814573,
+                -36.81134773263748
             ]
         }
     },
@@ -1474,8 +1794,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7641833699282,
-                -36.849734960989885
+                174.76416981398344,
+                -36.849698891317985
             ]
         }
     },
@@ -1522,26 +1842,6 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004Esv",
-            "Event": "Auckland University of Technology 17/08/2021",
-            "Location": "2 Governor Fitzroy Place, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "17/08/2021, 11:30 am",
-            "End": "17/08/2021, 1:00 pm",
-            "Advice": "Staff & students at lecture theatre WG403 or the level 4 foyer outside will be sent information on isolation and testing by AUT.  Students and staff elsewhere on the city campus need to follow Level 4 instructions and call Healthline if symptoms develop.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.765736,
-                -36.853386
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "id": "a0l4a0000004Esb",
             "Event": "Liquor King Ponsonby 13/08/2021",
             "Location": "254 Ponsonby Road, Ponsonby, Auckland 1011",
@@ -1554,8 +1854,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.74435546306992,
-                -36.85103685352072
+                174.74439176999547,
+                -36.850979903164834
             ]
         }
     },
@@ -1614,8 +1914,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.70560755267093,
-                -36.72677571235277
+                174.70564920849088,
+                -36.726774824567244
             ]
         }
     },
@@ -1634,8 +1934,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7055849421604,
-                -36.72681731724766
+                174.70561818614235,
+                -36.72684221966922
             ]
         }
     },
@@ -1734,8 +2034,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7055835517302,
-                -36.726832130890536
+                174.70565043068018,
+                -36.726818062080014
             ]
         }
     },
@@ -1754,8 +2054,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.70556500057756,
-                -36.72678639931004
+                174.705587270128,
+                -36.726790780263684
             ]
         }
     },
@@ -1774,8 +2074,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84486464028728,
-                -36.91619406487114
+                174.8448739127008,
+                -36.91619845233181
             ]
         }
     },
@@ -1834,8 +2134,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7850034236997,
-                -36.87569454379148
+                174.78498276320897,
+                -36.875757880890966
             ]
         }
     },
@@ -1894,8 +2194,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.70451795132288,
-                -36.80594258963568
+                174.70446006226516,
+                -36.8058909712072
             ]
         }
     },
@@ -1934,8 +2234,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.8448801862275,
-                -36.916237086820594
+                174.84486226572594,
+                -36.916235399253125
             ]
         }
     },
@@ -1954,8 +2254,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.68361971432884,
-                -36.908246520732774
+                174.68353316633699,
+                -36.90827584782128
             ]
         }
     },
@@ -1974,8 +2274,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.68354133255235,
-                -36.90823593063772
+                174.68355653900528,
+                -36.90824953486695
             ]
         }
     },
@@ -2054,8 +2354,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49720597660692,
-                -36.760020592033904
+                175.4972779822618,
+                -36.76003714414821
             ]
         }
     },
@@ -2074,8 +2374,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49703787236334,
-                -36.7601192920866
+                175.49707588396853,
+                -36.76004974809436
             ]
         }
     },
@@ -2154,8 +2454,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.49723054225163,
-                -36.759996634927134
+                175.49719782723108,
+                -36.760001024161156
             ]
         }
     },
@@ -2194,8 +2494,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.5033746159665,
-                -36.73714666856832
+                175.50339466828578,
+                -36.73715840135375
             ]
         }
     },
@@ -2214,8 +2514,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                175.50336489891205,
-                -36.73714557864431
+                175.50332322988206,
+                -36.73714088624136
             ]
         }
     },
@@ -2314,8 +2614,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.74439299896784,
-                -36.85103767314104
+                174.74436585166643,
+                -36.85099133088249
             ]
         }
     },
@@ -2347,15 +2647,15 @@
             "Location": "2A Dilworth Avenue, Remuera, Auckland 1050",
             "City": "Auckland",
             "Start": "16/08/2021, 6:40 am",
-            "End": "16/08/2021, 7:17 pm",
+            "End": "16/08/2021, 7:17 am",
             "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
             "Added": ""
         },
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.78505519274864,
-                -36.875746150120406
+                174.78501542574338,
+                -36.87575202149375
             ]
         }
     },
@@ -2403,7 +2703,7 @@
         "type": "Feature",
         "properties": {
             "id": "a0l4a0000004F3y",
-            "Event": "Domino's Pizza Beach Haven",
+            "Event": "Domino's Pizza Beach Haven 13/08/21",
             "Location": "104 Beach Haven Road, Beach Haven, Auckland 0626",
             "City": "Auckland",
             "Start": "13/08/2021, 7:45 pm",
@@ -2474,8 +2774,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.71531438489458,
-                -36.91310569405998
+                174.71526112661726,
+                -36.91315369860041
             ]
         }
     },
@@ -2494,8 +2794,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.71530335750597,
-                -36.913097530452745
+                174.7153171762284,
+                -36.91311166285584
             ]
         }
     },
@@ -2514,8 +2814,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.71535472432748,
-                -36.913079069857716
+                174.71528621591042,
+                -36.91309599347487
             ]
         }
     },
@@ -2834,8 +3134,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.78628523688224,
-                -36.920774482513245
+                174.78636056088087,
+                -36.92081780621291
             ]
         }
     },
@@ -2894,8 +3194,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7863379257115,
-                -36.92079694892738
+                174.78627487872367,
+                -36.920807935203214
             ]
         }
     },
@@ -2914,8 +3214,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.87290619119065,
-                -36.96213000217235
+                174.8729212665889,
+                -36.96215627209033
             ]
         }
     },
@@ -2962,126 +3262,6 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004GB4",
-            "Event": "Countdown Johnsonville Road Wellington 18/08/21",
-            "Location": "31 Johnsonville Road, Johnsonville, Wellington 6037",
-            "City": "Wellington",
-            "Start": "18/08/2021, 4:30 pm",
-            "End": "18/08/2021, 5:00 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.8073,
-                -41.2228
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GBJ",
-            "Event": "One Sushi Porirua 17/08/21",
-            "Location": "10 Serlby Place, Porirua City Centre, Porirua 5022",
-            "City": "Porirua",
-            "Start": "17/08/2021, 6:15 pm",
-            "End": "17/08/2021, 6:30 pm",
-            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.840734,
-                -41.134803
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GBd",
-            "Event": "St Pierre's Sushi Johnsonville Mall Wellington 17/08/21",
-            "Location": "66 Johnsonville Road, Johnsonville, Wellington 6037",
-            "City": "Wellington",
-            "Start": "17/08/2021, 5:15 pm",
-            "End": "17/08/2021, 5:30 pm",
-            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Johnsonville Mall customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.807087,
-                -41.223818
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GBn",
-            "Event": "The Roast Canteen Johnsonville Wellington 17/08/21",
-            "Location": "5 Johnsonville Road, Johnsonville, Wellington 6037",
-            "City": "Wellington",
-            "Start": "17/08/2021, 5:30 pm",
-            "End": "17/08/2021, 5:45 pm",
-            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.807555,
-                -41.222148
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GBs",
-            "Event": "1841 Bar and Restaurant Johnsonville 17/08/21",
-            "Location": "1 Disraeli Street, Johnsonville, Wellington 6037",
-            "City": "Wellington",
-            "Start": "17/08/2021, 7:00 pm",
-            "End": "17/08/2021, 9:00 pm",
-            "Advice": "All staff & downstairs patrons isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Upstairs patrons self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.807501,
-                -41.225194
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GC7",
-            "Event": "Johnsonville Medical Centre Pharmacy Wellington 18/08/21",
-            "Location": "2 Trafalgar Street, Johnsonville, Wellington 6037",
-            "City": "Wellington",
-            "Start": "18/08/2021, 4:15 pm",
-            "End": "18/08/2021, 4:45 pm",
-            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline. Customers isolate, test immediately and on day 5 after last exposure and continue to isolate until a negative day 5 test. Call Healthline.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.806133,
-                -41.221795
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "id": "a0l4a0000004GJ8",
             "Event": "Ulutoa and Sons Otahahu Auckland 16/8/21",
             "Location": "87 Māngere Road, Ōtāhuhu, Auckland 1062",
@@ -3096,86 +3276,6 @@
             "coordinates": [
                 174.839515,
                 -36.951662
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GKa",
-            "Event": "Waiouru Public Toilets State Highway 1 16/8/21",
-            "Location": "15 State Highway 1, Waiouru 4825",
-            "City": "Waiouru",
-            "Start": "16/08/2021, 6:30 pm",
-            "End": "16/08/2021, 7:00 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                175.668701,
-                -39.476968
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GKL",
-            "Event": "Z Petrol Station Waiouru 16/8/21",
-            "Location": "11 State Highway 1, Waiouru 4825",
-            "City": "Waiouru",
-            "Start": "16/08/2021, 6:30 pm",
-            "End": "16/08/2021, 7:00 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                175.668695,
-                -39.476578
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GKG",
-            "Event": "Wellington Airport 15/08/2021",
-            "Location": "1 Stewart Duff Drive, Rongotai, Wellington 6022",
-            "City": "Wellington",
-            "Start": "15/08/2021, 6:20 pm",
-            "End": "15/08/2021, 7:00 pm",
-            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.8098788667894,
-                -41.33471030016206
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GKk",
-            "Event": "BP Service Station Bulls 16/8/21",
-            "Location": "94 Bridge Street, Bulls 4818",
-            "City": "Bulls",
-            "Start": "16/08/2021, 9:30 pm",
-            "End": "16/08/2021, 10:00 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                175.386263,
-                -40.175876
             ]
         }
     },
@@ -3214,8 +3314,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84850559379328,
-                -36.94451164240759
+                174.84843647005886,
+                -36.94448441593166
             ]
         }
     },
@@ -3234,8 +3334,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84842613984273,
-                -36.94451015405912
+                174.8484661542309,
+                -36.94453021250475
             ]
         }
     },
@@ -3254,8 +3354,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84847911514365,
-                -36.94453772206018
+                174.84845686985432,
+                -36.94446581128592
             ]
         }
     },
@@ -3274,8 +3374,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84844374846534,
-                -36.944537357298245
+                174.8484966552505,
+                -36.94452655511315
             ]
         }
     },
@@ -3294,88 +3394,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.84849412659125,
-                -36.94450114290978
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GUL",
-            "Event": "Asian Food Specialist Kilbirnie 19/08/2021",
-            "Location": "3/7 Mahora Street, Kilbirnie, Wellington 6022",
-            "City": "Wellington",
-            "Start": "19/08/2021, 4:45 pm",
-            "End": "19/08/2021, 6:00 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.7969,
-                -41.319
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GU6",
-            "Event": "Whitaker Hall Auckland University Grafton Campus 13/08/21",
-            "Location": "27 Whitaker Place, Grafton, Auckland 1010",
-            "City": "Auckland",
-            "Start": "13/08/2021, 12:00 am",
-            "End": "13/08/2021, 11:45 pm",
-            "Advice": "Residents and staff Isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline. Visitors monitor for symptoms for 14 days. If symptoms develop, get a test and stay at home until you test negative.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.76559150079802,
-                -36.85799907739225
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GTc",
-            "Event": "Countdown Newtown 20/08/2021",
-            "Location": "3 John Street, Mount Cook, Wellington 6021",
-            "City": "Wellington",
-            "Start": "20/08/2021, 8:05 am",
-            "End": "20/08/2021, 9:45 am",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.7775,
-                -41.3073
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GUk",
-            "Event": "Pak N Save Kilbirnie 19/08/2021",
-            "Location": "78 Rongotai Road, Kilbirnie, Wellington 6022",
-            "City": "Wellington",
-            "Start": "19/08/2021, 12:10 pm",
-            "End": "19/08/2021, 12:25 pm",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.79652104464898,
-                -41.31832102520368
+                174.8484469608816,
+                -36.944470057256716
             ]
         }
     },
@@ -3394,8 +3414,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7664254846584,
-                -36.85770630969827
+                174.76646301968475,
+                -36.857697838644505
             ]
         }
     },
@@ -3414,28 +3434,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7664995406788,
-                -36.85773891791806
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GVJ",
-            "Event": "Whitaker Hall Auckland University Grafton Campus 19/08/21",
-            "Location": "27 Whitaker Place, Grafton, Auckland 1010",
-            "City": "Auckland",
-            "Start": "13/08/2021, 12:00 am",
-            "End": "19/08/2021, 11:45 pm",
-            "Advice": "Residents & staff isolate 14 days from last exposure. Test immediately & on days 5 & 12 after last exposure and call Healthline. Visitors self-monitor for symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.76555122027992,
-                -36.857991027079215
+                174.76641332968836,
+                -36.857689761923815
             ]
         }
     },
@@ -3454,8 +3454,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7615402111061,
-                -36.851816956734176
+                174.7615638553993,
+                -36.85179863506363
             ]
         }
     },
@@ -3474,28 +3474,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76643131370406,
-                -36.85770481292224
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GWH",
-            "Event": "Building 260 Room 115 OGGB Fisher and Paykel lecture theatre Auckland Uni City Campus 13/8/21",
-            "Location": "12 Grafton Road, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "13/08/2021, 11:45 am",
-            "End": "13/08/2021, 2:00 pm",
-            "Advice": "All at Statistics 101; Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.7709708417944,
-                -36.853271379901535
+                174.76643605773089,
+                -36.85772502898973
             ]
         }
     },
@@ -3514,8 +3494,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76649352838078,
-                -36.85775908138496
+                174.76643769190372,
+                -36.85770182572604
             ]
         }
     },
@@ -3534,8 +3514,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7664128869763,
-                -36.857706060188086
+                174.76646366146304,
+                -36.857715217910716
             ]
         }
     },
@@ -3574,8 +3554,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.90609153856175,
-                -37.20589279581427
+                174.90604022614616,
+                -37.20596816937691
             ]
         }
     },
@@ -3594,8 +3574,28 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.9060316273237,
-                -37.20593394239696
+                174.9060079639717,
+                -37.20596330557794
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Gou",
+            "Event": "Jets Gym Ōtāhuhu 16/08/2021",
+            "Location": "9/217 Great South Road, Ōtāhuhu, Auckland 1062",
+            "City": "Auckland",
+            "Start": "16/08/2021, 12:00 pm",
+            "End": "16/08/2021, 3:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.84027000854184,
+                -36.940952007074486
             ]
         }
     },
@@ -3608,14 +3608,14 @@
             "City": "Auckland",
             "Start": "17/08/2021, 12:00 pm",
             "End": "17/08/2021, 3:00 pm",
-            "Advice": null,
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
             "Added": "2021-08-22 19:15:42"
         },
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.840268,
-                -36.940924
+                174.84030377949057,
+                -36.94096688007293
             ]
         }
     },
@@ -3634,8 +3634,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7329948323803,
-                -36.85524478460226
+                174.73297239149764,
+                -36.85526650165405
             ]
         }
     },
@@ -3654,8 +3654,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.73182578372695,
-                -36.85439123134159
+                174.73185297630502,
+                -36.85438610370646
             ]
         }
     },
@@ -3674,8 +3674,68 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7055954542696,
-                -36.726796173066425
+                174.7056372502907,
+                -36.72684453789144
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004H2N",
+            "Event": "KFC Glenfield 14/08/21",
+            "Location": "403 Glenfield Road, Glenfield, Auckland 0629",
+            "City": "Auckland",
+            "Start": "14/08/2021, 10:40 am",
+            "End": "14/08/2021, 6:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.721491,
+                -36.781435
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004H2m",
+            "Event": "McDonalds New Lynn 17/08/2021",
+            "Location": "1 Memorial Drive, New Lynn, Auckland 0600",
+            "City": "Auckland",
+            "Start": "17/08/2021, 6:00 pm",
+            "End": "17/08/2021, 10:30 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.6835517254958,
+                -36.90822893817994
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004H2X",
+            "Event": "McDonalds New Lynn 17/08/2021",
+            "Location": "1 Memorial Drive, New Lynn, Auckland 0600",
+            "City": "Auckland",
+            "Start": "17/08/2021, 5:15 am",
+            "End": "17/08/2021, 4:00 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.6835544642682,
+                -36.90823738505146
             ]
         }
     },
@@ -3696,6 +3756,26 @@
             "coordinates": [
                 174.696859,
                 -36.897848
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004HRw",
+            "Event": "Elevator ride Car Park L6 to Level 1 SkyCity Theatre Auckland 13/08/2021",
+            "Location": "Victoria Street & Federal Street, Auckland CBD, Auckland 1010",
+            "City": "Auckland",
+            "Start": "13/08/2021, 7:59 pm",
+            "End": "13/08/2021, 8:59 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7626,
+                -36.8482
             ]
         }
     },
@@ -3854,8 +3934,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.72497718501887,
-                -36.81133367860322
+                174.72503653275922,
+                -36.81132404024452
             ]
         }
     },
@@ -3954,8 +4034,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76416218229105,
-                -36.849744260752246
+                174.76422874938947,
+                -36.84972958637895
             ]
         }
     },
@@ -3974,8 +4054,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76389326033816,
-                -36.85148313566367
+                174.7638896726097,
+                -36.85151020017944
             ]
         }
     },
@@ -3986,8 +4066,8 @@
             "Event": "Remuera Exchange Auckland 17/08/21",
             "Location": "2A Dilworth Avenue, Remuera, Auckland 1050",
             "City": "Auckland",
-            "Start": "17/08/2021, 1:33 pm",
-            "End": "17/08/2021, 1:35 pm",
+            "Start": "17/08/2021, 1:22 pm",
+            "End": "17/08/2021, 1:37 pm",
             "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
             "Added": ""
         },
@@ -4034,8 +4114,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76388571847934,
-                -36.85021534340334
+                174.76393872262724,
+                -36.850220838809776
             ]
         }
     },
@@ -4094,8 +4174,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.715200588292,
-                -36.92149746914891
+                174.71513261095893,
+                -36.92150843673279
             ]
         }
     },
@@ -4134,8 +4214,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7151582069726,
-                -36.921589788760464
+                174.71516114207384,
+                -36.92150943516817
             ]
         }
     },
@@ -4194,8 +4274,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.71532021136153,
-                -36.913146230396656
+                174.7152979217948,
+                -36.91311789333085
             ]
         }
     },
@@ -4214,8 +4294,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.71535204539674,
-                -36.91311648079234
+                174.71533714661186,
+                -36.913095171439416
             ]
         }
     },
@@ -4234,8 +4314,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7153133202154,
-                -36.91308031700251
+                174.71533428474768,
+                -36.91315076776119
             ]
         }
     },
@@ -4294,8 +4374,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7412904245472,
-                -36.9045093191186
+                174.74127593235116,
+                -36.90444901001475
             ]
         }
     },
@@ -4334,8 +4414,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.74128171151537,
-                -36.90445280757519
+                174.74121371711098,
+                -36.90446188388882
             ]
         }
     },
@@ -4394,8 +4474,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7412555131998,
-                -36.90449199772362
+                174.74127172389262,
+                -36.90453481442291
             ]
         }
     },
@@ -4414,8 +4494,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.74120697281595,
-                -36.904449778021906
+                174.74122867311203,
+                -36.904493417639245
             ]
         }
     },
@@ -4522,46 +4602,6 @@
     {
         "type": "Feature",
         "properties": {
-            "id": "a0l4a0000004G7C",
-            "Event": "AUT City campus 13/8/2021",
-            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "13/08/2021, 8:00 am",
-            "End": "13/08/2021, 4:00 pm",
-            "Advice": "All at 10am-12pm WF313 COMP501/52 Computing Technology in Society & 3-4pm WG403 COMP500/51 Programming 1 will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.7668312650691,
-                -36.85265300809281
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004G6x",
-            "Event": "AUT City campus 12/8/2021",
-            "Location": "55 Wellesley Street East, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "12/08/2021, 9:00 am",
-            "End": "12/08/2021, 8:30 pm",
-            "Advice": "All at 2-5pm WZ514 COMP500/51 Programming 1 will be sent information on isolation & testing by AUT. All elsewhere on city campus follow Level 4 instructions & call Healthline if symptomatic.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.76675697077806,
-                -36.85263308076457
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "id": "a0l4a0000004G7W",
             "Event": "Owens Foyer, level 2 in Aotea Centre Auckland CBD 13/8/2021",
             "Location": "50 Mayoral Drive, Auckland Central, Auckland 1010",
@@ -4574,8 +4614,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.7615608975225,
-                -36.85183563961741
+                174.7615939147492,
+                -36.85178122689762
             ]
         }
     },
@@ -4614,8 +4654,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.63264547647444,
-                -36.88225765691295
+                174.63270626511482,
+                -36.88222459805044
             ]
         }
     },
@@ -4654,8 +4694,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.63269640547557,
-                -36.882293461117705
+                174.63271544553817,
+                -36.882240666993916
             ]
         }
     },
@@ -4714,48 +4754,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.77090079078533,
-                -36.85335177135337
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GXt",
-            "Event": "Pak N Save Kilbirnie 18/08/2021",
-            "Location": "78 Rongotai Road, Kilbirnie, Wellington 6022",
-            "City": "Wellington",
-            "Start": "18/08/2021, 7:25 am",
-            "End": "18/08/2021, 7:40 am",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": ""
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.7964494159713,
-                -41.31833691204926
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GXe",
-            "Event": "Level 3 Kate Edger Information Commons City Campus University of Auckland 16/08/2021",
-            "Location": "9 Symonds Street, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "16/08/2021, 12:30 pm",
-            "End": "16/08/2021, 1:30 pm",
-            "Advice": "All on level3: isolate 14 days from last exposure. Test immediately & on days 5 & 12 after last exposure. Call Healthline. All on other levels: self-monitor for symptoms for 14 days. Get a test and isolate until you get a negative test, if symptomatic",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.770018,
-                -36.852
+                174.77093723434155,
+                -36.85332527258524
             ]
         }
     },
@@ -4774,8 +4774,8 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.76995428728148,
-                -36.861345175398185
+                174.76995880493263,
+                -36.86139287578144
             ]
         }
     },
@@ -4794,8 +4794,28 @@
         "geometry": {
             "type": "Point",
             "coordinates": [
-                174.77001632694774,
-                -36.861377657190985
+                174.77000894609287,
+                -36.86130875638008
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GZa",
+            "Event": "KFC Māngere 15/08/2021",
+            "Location": "Mascot Ave &, Wanstead Way, Māngere Central, Auckland 2022",
+            "City": "Auckland",
+            "Start": "15/08/2021, 2:15 pm",
+            "End": "15/08/2021, 3:15 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "2021-08-23 08:18:08"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.8022,
+                -36.97
             ]
         }
     },
@@ -4808,7 +4828,7 @@
             "City": "Auckland",
             "Start": "16/08/2021, 1:00 pm",
             "End": "16/08/2021, 2:00 pm",
-            "Advice": null,
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
             "Added": "2021-08-22 19:15:42"
         },
         "geometry": {
@@ -4816,46 +4836,6 @@
             "coordinates": [
                 174.765703,
                 -36.848423
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GZ1",
-            "Event": "Engineering Building City Campus University of Auckland 17/8/21",
-            "Location": "20 Symonds Street, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "17/08/2021, 6:00 pm",
-            "End": "17/08/2021, 6:30 pm",
-            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.769556,
-                -36.85307
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004Ga4",
-            "Event": "Countdown Māngere East 20/08/21",
-            "Location": "359 Massey Road, Māngere East, Auckland 2024",
-            "City": "Auckland",
-            "Start": "20/08/2021, 9:50 am",
-            "End": "20/08/2021, 10:15 am",
-            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.825131,
-                -36.966522
             ]
         }
     },
@@ -4902,6 +4882,146 @@
     {
         "type": "Feature",
         "properties": {
+            "id": "a0l4a0000004GkE",
+            "Event": "Countdown Auckland Victoria Street West 15/08/2021",
+            "Location": "1/25 Victoria Street West, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "15/08/2021, 2:30 pm",
+            "End": "15/08/2021, 3:15 pm",
+            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.764639,
+                -36.848641
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GVJ",
+            "Event": "Whitaker Hall Auckland University Grafton Campus",
+            "Location": "27 Whitaker Place, Grafton, Auckland 1010",
+            "City": "Auckland",
+            "Start": "13/08/2021, 12:00 am",
+            "End": "19/08/2021, 11:45 pm",
+            "Advice": "Residents & staff isolate 14 days from last exposure. Test immediately & on days 5 & 12 after last exposure and call Healthline. Visitors self-monitor for symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.765558,
+                -36.858027
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GJr",
+            "Event": "Domestic Terminal Auckland Airport 15/08/2021",
+            "Location": "Ray Emery Drive, Māngere,",
+            "City": null,
+            "Start": "15/08/2021, 4:00 pm",
+            "End": "15/08/2021, 5:00 pm",
+            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.791,
+                -37.0064
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Ggg",
+            "Event": "Wellington Domestic Airport 19/08/2021",
+            "Location": "1 Stewart Duff Drive, Rongotai, Wellington 6022",
+            "City": "Wellington",
+            "Start": "19/08/2021, 5:30 pm",
+            "End": "19/08/2021, 6:15 pm",
+            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.80986864535083,
+                -41.33471401772787
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GKG",
+            "Event": "Wellington Airport 15/08/2021",
+            "Location": "1 Stewart Duff Drive, Rongotai, Wellington 6022",
+            "City": "Wellington",
+            "Start": "15/08/2021, 6:20 pm",
+            "End": "15/08/2021, 7:00 pm",
+            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.8099165319439,
+                -41.33467743829195
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004H1j",
+            "Event": "Kumon New Lynn Education Centre 17/08/2021",
+            "Location": "3119 Great North Road, New Lynn, Auckland 0600",
+            "City": "Auckland",
+            "Start": "17/08/2021, 7:30 pm",
+            "End": "17/08/2021, 7:45 pm",
+            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
+            "Added": "2021-08-23 10:20:44"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.679325,
+                -36.908897
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GZ1",
+            "Event": "Engineering Building City Campus University of Auckland 17/8/21",
+            "Location": "20 Symonds Street, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "17/08/2021, 6:00 pm",
+            "End": "17/08/2021, 6:30 pm",
+            "Advice": "Self-monitor for COVID-19 symptoms for 14 days. If symptoms develop, get a test and stay at home until you get a negative test result AND until 24 hours after symptoms resolve.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.769556,
+                -36.85307
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "id": "a0l4a0000004Gho",
             "Event": "Auckland Domestic Airport 19/8/21",
             "Location": "1 Ray Emery Drive, Auckland Airport, Auckland 2022",
@@ -4922,6 +5042,366 @@
     {
         "type": "Feature",
         "properties": {
+            "id": "a0l4a0000004Esv",
+            "Event": "Auckland University of Technology 17/08/2021",
+            "Location": "2 Governor Fitzroy Place, Auckland Central, Auckland 1010",
+            "City": "Auckland",
+            "Start": "17/08/2021, 11:30 am",
+            "End": "17/08/2021, 1:00 pm",
+            "Advice": "Staff & students at lecture theatre WG403 or the level 4 foyer outside will be sent information on isolation and testing by AUT.  Students and staff elsewhere on the city campus need to follow Level 4 instructions and call Healthline if symptoms develop.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.765736,
+                -36.853386
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GBJ",
+            "Event": "One Sushi Porirua 17/08/21",
+            "Location": "10 Serlby Place, Porirua City Centre, Porirua 5022",
+            "City": "Porirua",
+            "Start": "17/08/2021, 6:15 pm",
+            "End": "17/08/2021, 6:30 pm",
+            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.840734,
+                -41.134803
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GBn",
+            "Event": "The Roast Canteen Johnsonville Wellington 17/08/21",
+            "Location": "5 Johnsonville Road, Johnsonville, Wellington 6037",
+            "City": "Wellington",
+            "Start": "17/08/2021, 5:30 pm",
+            "End": "17/08/2021, 5:45 pm",
+            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.807555,
+                -41.222148
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GBd",
+            "Event": "St Pierre's Sushi Johnsonville Mall Wellington 17/08/21",
+            "Location": "66 Johnsonville Road, Johnsonville, Wellington 6037",
+            "City": "Wellington",
+            "Start": "17/08/2021, 5:15 pm",
+            "End": "17/08/2021, 5:30 pm",
+            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure, and call Healthline. Johnsonville Mall customers self-monitor symptoms for 14 days. If symptomatic, test and stay home until a negative test result.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.807087,
+                -41.223818
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GC7",
+            "Event": "Johnsonville Medical Centre Pharmacy Wellington 18/08/21",
+            "Location": "2 Trafalgar Street, Johnsonville, Wellington 6037",
+            "City": "Wellington",
+            "Start": "18/08/2021, 4:15 pm",
+            "End": "18/08/2021, 4:45 pm",
+            "Advice": "Staff isolate 14 days from last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline. Customers isolate, test immediately and on day 5 after last exposure and continue to isolate until a negative day 5 test. Call Healthline.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.806133,
+                -41.221795
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Gai",
+            "Event": "Countdown Manukau 19/08/21",
+            "Location": "652 Great South Road, Manukau, Auckland 2104",
+            "City": "Auckland",
+            "Start": "19/08/2021, 4:53 pm",
+            "End": "19/08/2021, 5:30 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.882,
+                -36.9872
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Gn3",
+            "Event": "West City Mall Henderson 15/08/2021",
+            "Location": "7 Catherine Street, Henderson, Auckland 0612",
+            "City": "Auckland",
+            "Start": "15/08/2021, 1:00 pm",
+            "End": "15/08/2021, 3:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "2021-08-23 12:58:05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.63264954052343,
+                -36.8822316561518
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GdD",
+            "Event": "Countdown Takanini 19/08/2021",
+            "Location": "228 Great South Road, Takanini, Takanini 2112",
+            "City": "Takanini",
+            "Start": "19/08/2021, 7:00 am",
+            "End": "19/08/2021, 7:10 am",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "2021-08-22 19:15:42"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.92751751958764,
+                -37.04877635561953
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GsI",
+            "Event": "Countdown Grey Lynn 18/08/2021",
+            "Location": "271 Richmond Road, Grey Lynn, Auckland 1022",
+            "City": "Auckland",
+            "Start": "18/08/2021, 4:55 pm",
+            "End": "18/08/2021, 5:30 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "2021-08-22 16:08:28"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.73188765094415,
+                -36.854392542774136
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GB4",
+            "Event": "Countdown Johnsonville Road Wellington 18/08/21",
+            "Location": "31 Johnsonville Road, Johnsonville, Wellington 6037",
+            "City": "Wellington",
+            "Start": "18/08/2021, 4:30 pm",
+            "End": "18/08/2021, 5:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.8073,
+                -41.2228
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GKa",
+            "Event": "Waiouru Public Toilets State Highway 1 16/8/21",
+            "Location": "15 State Highway 1, Waiouru 4825",
+            "City": "Waiouru",
+            "Start": "16/08/2021, 6:30 pm",
+            "End": "16/08/2021, 7:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.668701,
+                -39.476968
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GKL",
+            "Event": "Z Petrol Station Waiouru 16/8/21",
+            "Location": "11 State Highway 1, Waiouru 4825",
+            "City": "Waiouru",
+            "Start": "16/08/2021, 6:30 pm",
+            "End": "16/08/2021, 7:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.668695,
+                -39.476578
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GKk",
+            "Event": "BP Service Station Bulls 16/8/21",
+            "Location": "94 Bridge Street, Bulls 4818",
+            "City": "Bulls",
+            "Start": "16/08/2021, 9:30 pm",
+            "End": "16/08/2021, 10:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                175.386263,
+                -40.175876
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GUL",
+            "Event": "Asian Food Specialist Kilbirnie 19/08/2021",
+            "Location": "3/7 Mahora Street, Kilbirnie, Wellington 6022",
+            "City": "Wellington",
+            "Start": "19/08/2021, 4:45 pm",
+            "End": "19/08/2021, 6:00 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7969,
+                -41.319
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GTc",
+            "Event": "Countdown Newtown 20/08/2021",
+            "Location": "3 John Street, Mount Cook, Wellington 6021",
+            "City": "Wellington",
+            "Start": "20/08/2021, 8:05 am",
+            "End": "20/08/2021, 9:45 am",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7775,
+                -41.3073
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GUk",
+            "Event": "Pak N Save Kilbirnie 19/08/2021",
+            "Location": "78 Rongotai Road, Kilbirnie, Wellington 6022",
+            "City": "Wellington",
+            "Start": "19/08/2021, 12:10 pm",
+            "End": "19/08/2021, 12:25 pm",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.7965255368351,
+                -41.318346413724036
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004GXt",
+            "Event": "Pak N Save Kilbirnie 18/08/2021",
+            "Location": "78 Rongotai Road, Kilbirnie, Wellington 6022",
+            "City": "Wellington",
+            "Start": "18/08/2021, 7:25 am",
+            "End": "18/08/2021, 7:40 am",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": ""
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.79644096394034,
+                -41.31835829626466
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "id": "a0l4a0000004Ga4",
+            "Event": "Countdown Māngere East 20/08/21",
+            "Location": "359 Massey Road, Māngere East, Auckland 2024",
+            "City": "Auckland",
+            "Start": "20/08/2021, 9:50 am",
+            "End": "20/08/2021, 10:15 am",
+            "Advice": "Stay at home, test immediately and on or around day 5 after last exposure and continue to stay at home until you receive a negative day 5 test result. Call Healthline for what to do next.",
+            "Added": "22/08/2021 9:40"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                174.825131,
+                -36.966522
+            ]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
             "id": "a0l4a0000004Ght",
             "Event": "New World Papatoetoe 19/08/21",
             "Location": "63 St George Street, Papatoetoe, Auckland 2025",
@@ -4936,26 +5416,6 @@
             "coordinates": [
                 174.8535,
                 -36.9798
-            ]
-        }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "id": "a0l4a0000004GkE",
-            "Event": "Countdown Auckland Victoria Street West 15/08/2021",
-            "Location": "1/25 Victoria Street West, Auckland Central, Auckland 1010",
-            "City": "Auckland",
-            "Start": "15/08/2021, 2:30 pm",
-            "End": "15/08/2021, 3:15 pm",
-            "Advice": "Isolate at home for 14 days from date of last exposure. Test immediately, and on days 5 & 12 after last exposure. Call Healthline for what to do next.",
-            "Added": "22/08/2021 9:40"
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [
-                174.764639,
-                -36.848641
             ]
         }
     }
