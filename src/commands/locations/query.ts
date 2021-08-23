@@ -44,9 +44,11 @@ const query: Command = {
             } else {
                 // otherwise args[0] must be a search term
                 key = 'All';
-                fields = args.slice(1);
+                fields = args;
             }
         }
+
+        // console.log(key, fields);
 
         const results = await locations.queryLocations(key, fields);
 

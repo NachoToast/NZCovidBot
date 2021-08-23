@@ -34,6 +34,7 @@ import query from './commands/locations/query';
 
 // indirect commands
 import checkNew from './commands/locations/checkNew';
+// TODO: instead of needing admin perms, just try send a message in set feed channel
 
 client.on('ready', () => {
     const finishBoot = new Date();

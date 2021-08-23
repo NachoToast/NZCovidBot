@@ -150,7 +150,7 @@ class LocationsManager {
                 const thisYear = new Date().getFullYear();
                 switch (searchValue) {
                     case 'month':
-                        dateValueToSearch = new Date(thisYear, thisMonth, thisDay).getTime();
+                        dateValueToSearch = new Date(thisYear, thisMonth - 1, thisDay).getTime();
                         break;
                     case 'yesterday':
                         dateValueToSearch = new Date(thisYear, thisMonth, thisDay - 1).getTime();
@@ -159,12 +159,12 @@ class LocationsManager {
                         dateValueToSearch = new Date(thisYear, thisMonth, thisDay - 7).getTime();
                         break;
                     case 'today':
-                        dateValueToSearch = new Date(thisYear, thisMonth, thisDay).getTime();
+                        dateValueToSearch = new Date().getTime();
                         break;
                     default:
                         if (searchValue.endsWith('hrs') && !Number.isNaN(Number(searchValue.replace('hrs', '')))) {
                             const hrs = Number(searchValue.replace('hrs', ''));
-                            dateValueToSearch = new Date(thisYear, thisMonth, thisDay).getTime() - hrs * 3600000;
+                            dateValueToSearch = new Date().getTime() - hrs * 3600000;
                         } else if (searchValue.endsWith('hrs')) {
                             return 'Invalid amount of hours.';
                         } else
@@ -173,11 +173,12 @@ class LocationsManager {
                             )}.`;
                 }
 
-                return this.locations.filter(({ properties: { Start } }) => {
-                    const dateStartArgs = Start.substring(0, 5)
-                        .split('/')
-                        .map((e) => Number(e));
-                    return new Date(thisYear, dateStartArgs[1] - 1, dateStartArgs[0]).getTime() >= dateValueToSearch;
+                return this.locations.filter(({ properties: { Added, Start } }) => {
+                    const dateArray: number[] = [];
+                    if (Added !== '') dateArray.push(LocationsManager.stringToDate(Added).getTime());
+                    if (Start !== '') dateArray.push(LocationsManager.stringToDate(Start).getTime());
+                    const max = Math.max(...dateArray);
+                    return max >= dateValueToSearch;
                 });
             }
 
@@ -223,6 +224,33 @@ class LocationsManager {
         }
     }
 
+    private static stringToDate(input: string): Date {
+        // Added: yyyy-mm-dd hh:mm:ss, dd/mm/yy h:mm
+        // Stard|End: dd/mm/yy, h:mm am|pm
+
+        if (input.includes(',')) {
+            // Stard|End
+            const [date, time, half] = input.split(/[, ]+/);
+            const [day, month, year] = date.split('/').map((e) => Number(e));
+            const [hour, minute] = time.split(':').map((e) => Number(e));
+            const hour24 = this.convertTo24Hour(hour, half);
+            // return `${day}/${month}/${year} - ${hour24}:${minute} (was ${input})`;
+            return new Date(year, month - 1, day, hour24, minute);
+        }
+        // Added
+        const [date, time] = input.split(' ');
+        const [day, month, year] = (date.includes('/') ? date.split('/') : date.split('-').reverse()).map((e) => Number(e));
+        const [hour24, minute, second] = time.split(':').map((e) => Number(e));
+        // return `${day}/${month}/${year} - ${hour24}:${minute}:${second} (was ${input})`;
+        return new Date(year, month - 1, day, hour24, minute, second ?? 0);
+    }
+
+    private static convertTo24Hour(hour: number, timehalf: string) {
+        if (timehalf === 'pm' && hour < 12) return hour + 12;
+        if (timehalf === 'am' && hour === 12) return 0;
+        return hour;
+    }
+
     private static stringToMoment(input: string, includesHour?: true): string {
         let [day, month, year] = input
             .slice(0, 10)
@@ -239,7 +267,7 @@ class LocationsManager {
                 .split(' ')[1]
                 .split(':')
                 .map((e) => Number(e));
-            date = new Date(year, month - 1, day, hour, minute, second);
+            date = new Date(year, month - 1, day, hour, minute, second ?? 0);
         } else date = new Date(year, month - 1, day);
         return moment(date).fromNow();
     }
@@ -270,27 +298,19 @@ class LocationsManager {
             .setColor('#ffcc00')
             .setTitle(data?.Event ?? 'Unknown Event')
             .setDescription(data?.Location.replace(', ', '\n') ?? 'Unknown Location');
-        if (data?.Start) {
-            embed.addField('Started', `${this.stringToMoment(data.Start)}\n${data.Start}`, true);
+        if (data.Start !== '') {
+            embed.addField('Started', `${data.Start}`, true);
         } else embed.addField('Started', 'Unknown', true);
 
-        if (data?.End) {
-            embed.addField('Ended', `${this.stringToMoment(data.End)}\n${data.End}`, true);
+        if (data.End !== '') {
+            embed.addField('Ended', `${data.End}`, true);
         } else embed.addField('Ended', 'Unknown', true);
 
-        if (data?.Added !== undefined && data?.Added !== '') {
-            embed.setFooter(
-                `Added ${this.stringToMoment(data.Added, true)} (${data.Added})`,
-                'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
-            );
-        } else
-            embed.setFooter(
-                `Unknown Added Date`,
-                'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
-            );
-
-        if (data?.id !== undefined) embed.addField('ID', `${data?.id}`, true);
-
+        const footer = data?.Added === '' ? 'Unknown Added Date' : `Added ${moment(this.stringToDate(data.Added)).fromNow()}`;
+        embed.setFooter(
+            `${footer} | ID: ${data?.id ?? 'Unknown'}`,
+            'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
+        );
         embed.addField('Advice', data?.Advice ?? 'None');
 
         return embed;

@@ -25,11 +25,11 @@ const checkNew = async (locations: LocationsManager, client: Client, guildSettin
             }
         }
     }
-    const hrs72 = (await locations.queryLocations('Added', '72hrs')).length;
+    const hrs72 = (await locations.queryLocations('Added', '24hrs')).length;
     const hoursSplit = new Date().toLocaleTimeString().split(/[:\s]/);
     const time = `${hoursSplit[0]}:${hoursSplit[1]} ${hoursSplit[3]}`;
     client.user?.setActivity(
-        `${locations.locationsMeta.number} Locations (${hrs72} Last 72 Hours) || ${client.guilds.cache.size} Servers || Updated: ${time}`,
+        `${locations.locationsMeta.number} Locations (${hrs72} Last 24 Hours) || ${client.guilds.cache.size} Servers || Updated: ${time}`,
         {
             type: 'WATCHING',
         }
