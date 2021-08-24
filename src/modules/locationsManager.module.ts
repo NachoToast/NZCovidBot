@@ -279,16 +279,17 @@ class LocationsManager {
             .setFooter(
                 'Locations of Interest',
                 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
-            );
+            )
+            .setTimestamp();
 
         if (maxLength !== undefined && locations.length !== maxLength) {
             embed.setTitle(`Showing ${locations.length}/${maxLength} Locations`);
         } else embed.setTitle(`${locations.length} Locations`);
 
         for (const {
-            properties: { Event, id },
+            properties: { Event, id, Location },
         } of locations) {
-            embed.addField(`${Event ?? 'Unknown Event'}`, `${id ?? 'Unknown ID'}`);
+            embed.addField(`${Event ?? 'Unknown Event'}`, `${Location ?? 'Unknown Location'}\nID: ${id ?? 'Unknown'}`);
         }
         return embed;
     }
@@ -297,7 +298,8 @@ class LocationsManager {
         const embed = new MessageEmbed()
             .setColor('#ffcc00')
             .setTitle(data?.Event ?? 'Unknown Event')
-            .setDescription(data?.Location.replace(', ', '\n') ?? 'Unknown Location');
+            .setDescription(data?.Location.replace(', ', '\n') ?? 'Unknown Location')
+            .setTimestamp();
         if (data.Start !== '') {
             embed.addField('Started', `${data.Start}`, true);
         } else embed.addField('Started', 'Unknown', true);
@@ -308,7 +310,7 @@ class LocationsManager {
 
         const footer = data?.Added === '' ? 'Unknown Added Date' : `Added ${moment(this.stringToDate(data.Added)).fromNow()}`;
         embed.setFooter(
-            `${footer} | ID: ${data?.id ?? 'Unknown'}`,
+            `${footer} / ID: ${data?.id ?? 'Unknown'}`,
             'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
         );
         embed.addField('Advice', data?.Advice ?? 'None');
