@@ -42,11 +42,11 @@ client.on('ready', () => {
     console.log(`--------------------`);
     console.log(`${client?.user?.tag} logged in.`);
     console.log(`Boot Time: ${((finishBoot.getTime() - startBoot.getTime()) / 1000).toFixed(2)}s`);
-    console.log(`${config.devMode ? 'Development' : 'Live'} build.`);
+    console.log(`${config?.devMode ? 'Development' : 'Live'} build.`);
 
     const devModeCheckInterval = `*/10 * * * * *`;
-    const normalCheckInterval = `*/${config.checkInterval} * * * *`;
-    const interval = config.devMode ? devModeCheckInterval : normalCheckInterval;
+    const normalCheckInterval = `*/${config?.checkInterval} * * * *`;
+    const interval = config?.devMode ? devModeCheckInterval : normalCheckInterval;
     cron.schedule(interval, () => {
         checkNew(locations, client, settings);
     });
@@ -81,8 +81,8 @@ client.on('guildCreate', async (guild) => {
 client.on('messageCreate', async (message: Message) => {
     if (!message.guild || message.author.bot) return;
 
-    const inDevServer: boolean = config.devServer === message.guildId;
-    if (config.devMode !== inDevServer) return;
+    const inDevServer: boolean = config?.devServer === message.guildId;
+    if (config?.devMode !== inDevServer) return;
 
     const [prefix, command, ...args] = message.content.split(' ');
 
@@ -145,4 +145,4 @@ client.on('messageCreate', async (message: Message) => {
 });
 
 console.log(`Logging In`);
-client.login(config.devMode ? config.discordTokenDev : config.discordToken);
+client.login(config?.devMode ? config?.discordTokenDev : config?.discordToken);

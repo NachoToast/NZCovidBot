@@ -1,7 +1,10 @@
 {
-    "devMode": false, // if true, only responsds in dev server
-    "discordToken": "abc123",
+    "devMode": false, // if true, only responds in dev server
+    /* following fields only need to be filled in if devmode is true, otherwise you can leave them blank (but still present) */
     "discordTokenDev": "abc123",
-    "devServer": "server id",
-    "checkInterval": "30" // how frequently (minutes) to check for updates
+    "devServer": "795106209946402837",
+    /* following fields must be filled in */
+    "discordToken": "abc123",
+    "checkInterval": "60", // how frequently (minutes) to check for updates
+    "invite": "https://discord.com/api/oauth2/authorize?client_id=878841453328085032&permissions=18432&scope=bot"
 }
