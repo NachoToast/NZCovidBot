@@ -1,14 +1,10 @@
 import { Message } from 'discord.js';
 import Command from '../interfaces/Command';
 
-const commands: string[] = ['ping', 'list', 'config'];
-
 const help: Command = {
     execute: async ({ message }: { message: Message }) => {
         message.channel.send(
-            `NZ Covid Bot provides updates about new and removed locations of interest, and enables searching through them.\nType \`covid help <command>\` for more specific help on a particular command.\nBasic commands:\n${commands.join(
-                ', '
-            )}`
+            `NZ Covid Bot provides updates about new locations of interest, and enables searching through them.\nTo list commands, type \`covid list\`\nTo get more help on a particular command, type \`covid help <command>\``
         );
     },
     help: async () => {},
