@@ -16,7 +16,12 @@ class GuildConfigManager {
     public config: Config;
 
     constructor() {
-        this.config = JSON.parse(fs.readFileSync('guildConfig.json', 'utf-8'));
+        try {
+            this.config = JSON.parse(fs.readFileSync('guildConfig.json', 'utf-8'));
+        } catch (error) {
+            this.config = {};
+            fs.writeFileSync('guildConfig.json', JSON.stringify({}, null, 4));
+        }
     }
 
     private async saveConfig(): Promise<boolean> {
