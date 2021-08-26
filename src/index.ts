@@ -35,6 +35,7 @@ import query from './commands/locations/query';
 // indirect commands
 import checkNew from './commands/locations/checkNew';
 // TODO: instead of needing admin perms, just try send a message in set feed channel
+// TODO: Add file checks so .json can go into .gitignore
 
 client.on('ready', () => {
     const finishBoot = new Date();

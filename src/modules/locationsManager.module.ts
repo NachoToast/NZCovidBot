@@ -31,7 +31,19 @@ class LocationsManager {
 
     constructor() {
         try {
-            this.locations = JSON.parse(fs.readFileSync('covidData/locations.json', 'utf8'));
+            try {
+                this.locations = JSON.parse(fs.readFileSync('covidData/locations.json', 'utf8'));
+            } catch (error) {
+                if (error?.code === 'ENOENT') {
+                    this.locations = [];
+                    console.log("Couldn't find locations data file, making new one.");
+                    fs.mkdirSync('covidData');
+                    fs.writeFileSync('covidData/locations.json', JSON.stringify({}, null, 4));
+                } else {
+                    console.log(error);
+                    process.exit();
+                }
+            }
             this.locationsMeta = {
                 number: this.locations.length,
                 lastUpdated: new Date().toISOString(),
