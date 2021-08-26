@@ -3,7 +3,7 @@ console.log(`${startBoot.toLocaleString()}\nBooting NZ Covid Bot...\n-----------
 
 console.log(`Importing Dependencies`);
 import * as config from './config.json';
-import { Client, Message, Intents } from 'discord.js';
+import { Client, Message, Intents, TextChannel, GuildMember, Permissions } from 'discord.js';
 import Command from './interfaces/Command';
 import LocationsManager from './modules/locationsManager.module';
 import GuildConfigManager from './modules/guildConfigManager.module';
@@ -130,8 +130,13 @@ client.on('messageCreate', async (message: Message) => {
     }
 
     if (commandToExecute === undefined) return;
-    if (helpMode && commandToExecute !== help) commandToExecute.help({ message, args });
-    else commandToExecute.execute({ client, message, args, settings, locations });
+
+    const channel = message.channel as TextChannel;
+    const myPerms = channel.permissionsFor(message.guild.me as GuildMember);
+    if (!myPerms.has(Permissions.FLAGS.SEND_MESSAGES)) return;
+
+    if (helpMode && commandToExecute !== help) commandToExecute.help({ message, args, myPerms });
+    else commandToExecute.execute({ client, message, args, settings, locations, myPerms });
 });
 
 console.log(`Logging In`);
