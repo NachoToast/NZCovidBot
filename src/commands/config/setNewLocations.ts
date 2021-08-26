@@ -50,7 +50,14 @@ const setNew: Command = {
 
         message.channel.send(`Now announcing new locations of interest in <#${newChannelID}>`);
     },
-    help: async ({ message }: { message: Message }) => {
+    help: async ({ message, myPerms }: { message: Message; myPerms: Permissions }) => {
+        if (!myPerms.has(Permissions.FLAGS.EMBED_LINKS)) {
+            message.channel.send(
+                `Sets the channel to post new locations of interest in.\nUsage: \`covid set <channel>\`\nGive me \`Embed Messages\` permissions for a more detailed help menu.`
+            );
+            return;
+        }
+
         const embed = new MessageEmbed()
             .setColor('#ffcc00')
             .setTitle('Set Channel Command')
