@@ -67,7 +67,8 @@ const setNew: Command = {
             .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
             .addField(`Usage`, 'covid set <channel>', true)
             .addField('Requirements', 'Administrator', true)
-            .addField(`Examples`, `covid set <#${message.channelId}>\ncovid set ${message.channelId}\ncovid set disable`);
+            .addField(`Examples`, `covid set <#${message.channelId}>\ncovid set ${message.channelId}\ncovid set disable`)
+            .addField('Related Commands', 'config');
         message.channel.send({ embeds: [embed] });
     },
 };

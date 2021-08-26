@@ -42,9 +42,8 @@ const setPrefix: Command = {
             .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
             .addField(`Usage`, 'covid prefix <prefixes>', true)
             .addField('Requirements', 'Administrator', true)
-            .addField('\u200b', '\u200b')
-            .addField(`Examples`, `covid prefix c\ncovid prefix c! c19\ncovid prefix !covid`, true)
-            .addField('Related Commands', `config`, true);
+            .addField(`Examples`, `covid prefix c\ncovid prefix c! c19\ncovid prefix !covid`)
+            .addField('Related Commands', `config`);
         message.channel.send({ embeds: [embed] });
     },
 };
