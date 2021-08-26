@@ -67,7 +67,7 @@ class LocationsManager {
 
             // calcualting added locations, i.e. locations in new but not local
             const actuallyNew: Location[] = [];
-            const localIDs = this.locations.map((e) => e.properties.id);
+            const localIDs = this.locations.map(({ properties: { id } }) => id);
             for (const location of newLocations) {
                 const indexInOld = localIDs.indexOf(location.properties.id);
                 if (indexInOld === -1) {
