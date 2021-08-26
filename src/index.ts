@@ -106,6 +106,7 @@ client.on('messageCreate', async (message: Message) => {
             commandToExecute = ping;
             break;
         case 'setnew':
+        case 'set':
             commandToExecute = setNew;
             break;
         case 'invite':
