@@ -14,8 +14,8 @@ const setNew: Command = {
         args: string[];
         client: Client;
     }) => {
-        const authorPermissions = message.member?.permissions.has(Permissions.FLAGS.ADMINISTRATOR);
-        if (!authorPermissions) {
+        const adminPerms = message.member?.permissions.has(Permissions.FLAGS.ADMINISTRATOR);
+        if (!adminPerms) {
             message.channel.send('You need admin permissions to change the channel.');
             return;
         }
@@ -24,11 +24,17 @@ const setNew: Command = {
         const oldChannelID = settings.getChannel(message.guildId);
         const newChannelID = args[0] === undefined ? message.channelId : args[0].replace(/[<#>]/g, '');
 
-        if (newChannelID === oldChannelID) {
+        if (newChannelID === 'disabled' || newChannelID === 'none') {
             settings.changeChannel(message.guildId, false);
             message.channel.send(`No longer announcing new locations of interest.`);
             return;
         }
+
+        if (newChannelID === oldChannelID) {
+            message.channel.send(`The new locations channel is already <#${oldChannelID}>, use \`covid set none\` to disable.`);
+            return;
+        }
+
         const newChannel = (await client.channels.fetch(newChannelID)) as TextChannel;
         const myPerms = newChannel.permissionsFor(message.guild?.me as GuildMember);
         const canSend = myPerms.has(Permissions.FLAGS.SEND_MESSAGES);
@@ -64,9 +70,12 @@ const setNew: Command = {
             .setDescription(
                 "Sets the channel to post new locations of interest in.\nThis can be quite spammy, so having a dedicated channel is recommended.\nUse 'disable' or 'none' to turn off new location messages."
             )
-            .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
-            .addField(`Usage`, 'covid set <channel>', true)
-            .addField('Requirements', 'Administrator', true)
+            .setFooter(
+                `Admin Only Command`,
+                'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
+            )
+            .addField(`Usage`, 'covid set <channel?>', true)
+            .addField('Aliases', 'setnew', true)
             .addField(`Examples`, `covid set <#${message.channelId}>\ncovid set ${message.channelId}\ncovid set disable`)
             .addField('Related Commands', 'config');
         message.channel.send({ embeds: [embed] });

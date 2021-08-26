@@ -39,9 +39,12 @@ const setPrefix: Command = {
             .setDescription(
                 "Sets the bot prefix for this server.\nCan specify 1 or more prefixes, separated by spaces.\n'covid' will always be a prefix."
             )
-            .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
-            .addField(`Usage`, 'covid prefix <prefixes>', true)
-            .addField('Requirements', 'Administrator', true)
+            .setFooter(
+                `Admin Only Command`,
+                'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
+            )
+            .addField(`Usage`, 'covid prefix <prefixes?>', true)
+            .addField('Aliases', 'pref, prefs', true)
             .addField(`Examples`, `covid prefix c\ncovid prefix c! c19\ncovid prefix !covid`)
             .addField('Related Commands', `config`);
         message.channel.send({ embeds: [embed] });

@@ -47,7 +47,7 @@ const showConfig: Command = {
             .setDescription('Lists server-specific config.')
             .addField(`Usage`, 'covid config', true)
             .addField('Aliases', 'conf', true)
-            .addField('Related Commands', 'prefix, set', true);
+            .addField('Related Commands', 'prefix, set');
         message.channel.send({ embeds: [embed] });
     },
 };

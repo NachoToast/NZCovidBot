@@ -26,7 +26,7 @@ console.log(`Importing Commands`);
 import help from './commands/help';
 import ping from './commands/ping';
 import list from './commands/list';
-import invite from './commands/invite';
+import about from './commands/about';
 import setPrefix from './commands/config/setPrefix';
 import setNew from './commands/config/setNewLocations';
 import showConfig from './commands/config/showConfig';
@@ -99,6 +99,7 @@ client.on('messageCreate', async (message: Message) => {
             break;
         case 'prefix':
         case 'pref':
+        case 'prefs':
             commandToExecute = setPrefix;
             break;
         case 'ping':
@@ -109,12 +110,16 @@ client.on('messageCreate', async (message: Message) => {
         case 'set':
             commandToExecute = setNew;
             break;
+        case 'about':
         case 'invite':
+        case 'source':
+        case 'src':
         case 'inv':
-            commandToExecute = invite;
+            commandToExecute = about;
             break;
         case 'help':
         case 'h':
+        case '?':
             commandToExecute = help;
             break;
         case 'list':
