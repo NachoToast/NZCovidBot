@@ -1,5 +1,5 @@
 import Command from '../../interfaces/Command';
-import { Client, Message, Permissions } from 'discord.js';
+import { Client, GuildMember, Message, MessageEmbed, Permissions, TextChannel } from 'discord.js';
 import GuildConfigManager from '../../modules/guildConfigManager.module';
 
 const setNew: Command = {
@@ -21,24 +21,47 @@ const setNew: Command = {
         }
         if (message.guildId === null) return; // can only be done in servers, not dms
 
-        const currentChannelID = settings.getChannel(message.guildId);
+        const oldChannelID = settings.getChannel(message.guildId);
+        const newChannelID = args[0] === undefined ? message.channelId : args[0].replace(/[<#>]/g, '');
 
-        if (currentChannelID !== false && (args[0] === undefined || args[0].replace(/[<#>]/g, '') === currentChannelID)) {
+        if (newChannelID === oldChannelID) {
             settings.changeChannel(message.guildId, false);
             message.channel.send(`No longer announcing new locations of interest.`);
             return;
         }
+        const newChannel = (await client.channels.fetch(newChannelID)) as TextChannel;
+        const myPerms = newChannel.permissionsFor(message.guild?.me as GuildMember);
+        const canSend = myPerms.has(Permissions.FLAGS.SEND_MESSAGES);
+        const canView = myPerms.has(Permissions.FLAGS.VIEW_CHANNEL);
+        const canLink = myPerms.has(Permissions.FLAGS.EMBED_LINKS);
 
-        const newChannelID = args[0] !== undefined ? args[0].replace(/[<#>]/g, '') : message.channelId;
+        const isValidChannel = canSend && canView && canLink;
+
+        if (!isValidChannel) {
+            let msg = [];
+            if (!canView) msg.push(`I can't view that channel.`);
+            if (!canSend) msg.push(`I can't send messages in that channel.`);
+            if (!canLink) msg.push(`I can't embed links in that channel.`);
+            message.channel.send(msg.join('\n'));
+            return;
+        }
 
         settings.changeChannel(message.guildId, newChannelID);
 
         message.channel.send(`Now announcing new locations of interest in <#${newChannelID}>`);
     },
     help: async ({ message }: { message: Message }) => {
-        message.channel.send(
-            `Sets the channel to use for posting new locations of interest, usage: \`covid set <channel>\`\nLeave blank to disable entirely.\nAdmin use only.`
-        );
+        const embed = new MessageEmbed()
+            .setColor('#ffcc00')
+            .setTitle('Set Channel Command')
+            .setDescription(
+                "Sets the channel to post new locations of interest in.\nThis can be quite spammy, so having a dedicated channel is recommended.\nUse 'disable' or 'none' to turn off new location messages."
+            )
+            .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
+            .addField(`Usage`, 'covid set <channel>', true)
+            .addField('Requirements', 'Administrator', true)
+            .addField(`Examples`, `covid set <#${message.channelId}>\ncovid set ${message.channelId}\ncovid set disable`);
+        message.channel.send({ embeds: [embed] });
     },
 };
 
