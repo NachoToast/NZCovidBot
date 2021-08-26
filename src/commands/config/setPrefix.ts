@@ -1,5 +1,5 @@
 import Command from '../../interfaces/Command';
-import { Message, Permissions } from 'discord.js';
+import { Message, MessageEmbed, Permissions } from 'discord.js';
 import GuildConfigManager from '../../modules/guildConfigManager.module';
 
 const setPrefix: Command = {
@@ -10,18 +10,42 @@ const setPrefix: Command = {
             return;
         }
 
+        if (message.guildId === null) return; // can only be done in servers, not dms
+
         if (args[0] === undefined) {
-            message.channel.send('Please specify a prefix, e.g. `covid prefix !covid`');
+            message.channel.send('Cleared server-specific prefixes');
+            settings.changePrefix(message.guildId, []);
             return;
         }
 
-        if (message.guildId === null) return;
-        settings.changePrefix(message.guildId, args);
+        settings.changePrefix(
+            message.guildId,
+            args.filter((e) => e !== 'covid')
+        );
 
-        message.channel.send(`Updated server prefixes to ${args.join(', ')}`);
+        message.channel.send(`Updated server prefixes to ${args.filter((e) => e !== 'covid').join(', ')}`);
     },
-    help: async ({ message }: { message: Message }) => {
-        message.channel.send(`Sets the bot prefix for the server, usage: \`covid prefix <prefix>\`\nAdmin use only.`);
+    help: async ({ message, myPerms }: { message: Message; myPerms: Permissions }) => {
+        if (!myPerms.has(Permissions.FLAGS.EMBED_LINKS)) {
+            message.channel.send(
+                `Sets the bot prefix for this server.\nUsage: \`covid prefix <prefixes>\`\nGive me \`Embed Messages\` permissions for a more detailed help menu.`
+            );
+            return;
+        }
+
+        const embed = new MessageEmbed()
+            .setColor('#ffcc00')
+            .setTitle('Set Prefix Command')
+            .setDescription(
+                "Sets the bot prefix for this server.\nCan specify 1 or more prefixes, separated by spaces.\n'covid' will always be a prefix."
+            )
+            .setFooter(`NZ Covid Bot`, 'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png')
+            .addField(`Usage`, 'covid prefix <prefixes>', true)
+            .addField('Requirements', 'Administrator', true)
+            .addField('\u200b', '\u200b')
+            .addField(`Examples`, `covid prefix c\ncovid prefix c! c19\ncovid prefix !covid`, true)
+            .addField('Related Commands', `config`, true);
+        message.channel.send({ embeds: [embed] });
     },
 };
 
