@@ -60,9 +60,7 @@ class LocationsManager {
         try {
             // get json data
             const { features: newLocations }: { features: Location[] } = await fetch(
-                `https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/locations-of-interest/${
-                    LocationsManager.currentMonth[new Date().getMonth()]
-                }-2021/locations-of-interest.geojson`
+                `https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/locations-of-interest/august-2021/locations-of-interest.geojson`
             ).then((res: any) => res.json());
 
             // calcualting added locations, i.e. locations in new but not local
@@ -93,9 +91,7 @@ class LocationsManager {
         try {
             // get json data
             const { features: newLocations }: { features: Location[] } = await fetch(
-                `https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/locations-of-interest/${
-                    LocationsManager.currentMonth[new Date().getMonth()]
-                }-2021/locations-of-interest.geojson`
+                `https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/locations-of-interest/august-2021/locations-of-interest.geojson`
             ).then((res: any) => res.json());
 
             // make new meta object
@@ -261,27 +257,6 @@ class LocationsManager {
         if (timehalf === 'pm' && hour < 12) return hour + 12;
         if (timehalf === 'am' && hour === 12) return 0;
         return hour;
-    }
-
-    private static stringToMoment(input: string, includesHour?: true): string {
-        let [day, month, year] = input
-            .slice(0, 10)
-            .split(/[/-]/)
-            .map((e) => Number(e));
-        if (input.slice(0, 10).includes('-')) {
-            let temp = day;
-            day = year;
-            year = temp;
-        }
-        let date;
-        if (includesHour === true) {
-            let [hour, minute, second] = input
-                .split(' ')[1]
-                .split(':')
-                .map((e) => Number(e));
-            date = new Date(year, month - 1, day, hour, minute, second ?? 0);
-        } else date = new Date(year, month - 1, day);
-        return moment(date).fromNow();
     }
 
     public static makeMassLocationEmbed(locations: Location[], maxLength?: number): MessageEmbed {
