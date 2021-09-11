@@ -8,37 +8,32 @@ const fetch = require('node-fetch');
 interface LocationMeta {
     number: number;
     lastUpdated: string;
+    reset: boolean;
 }
 
 class LocationsManager {
-    private static currentMonth = [
-        'january',
-        'february',
-        'march',
-        'april',
-        'may',
-        'june',
-        'july',
-        'august',
-        'september',
-        'october',
-        'november',
-        'december',
-    ];
-
     public locations: Location[];
     public locationsMeta: LocationMeta;
 
     constructor() {
+        let fromReset = false;
         try {
             try {
                 this.locations = JSON.parse(fs.readFileSync('covidData/locations.json', 'utf8'));
-            } catch (error) {
+            } catch (error: any) {
                 if (error?.code === 'ENOENT') {
                     this.locations = [];
+                    fromReset = true;
                     console.log("Couldn't find locations data file, making new one.");
-                    fs.mkdirSync('covidData');
-                    fs.writeFileSync('covidData/locations.json', JSON.stringify({}, null, 4));
+                    try {
+                        fs.mkdirSync('covidData');
+                        fs.writeFileSync('covidData/locations.json', JSON.stringify([], null, 4));
+                    } catch (error: any) {
+                        if (error?.code === 'EEXIST') {
+                            console.log("Couldn't find locations data file (but found directory), making file.");
+                            fs.writeFileSync('covidData/locations.json', JSON.stringify([], null, 4));
+                        } else throw new Error();
+                    }
                 } else {
                     console.log(error);
                     process.exit();
@@ -47,6 +42,7 @@ class LocationsManager {
             this.locationsMeta = {
                 number: this.locations.length,
                 lastUpdated: new Date().toISOString(),
+                reset: fromReset,
             };
         } catch (error) {
             console.log(error);
@@ -71,13 +67,15 @@ class LocationsManager {
                 if (indexInOld === -1) {
                     actuallyNew.push(location);
                 } else {
-                    localIDs.splice(indexInOld, 1);
+                    // localIDs.splice(indexInOld, 1);
                 }
             }
 
             // mark new updated time
             this.locationsMeta.lastUpdated = new Date().toISOString();
-
+            if (this.locationsMeta.reset) {
+                return 'fromReset';
+            }
             return actuallyNew;
         } catch (error) {
             console.log(error);
@@ -94,17 +92,29 @@ class LocationsManager {
                 `https://raw.githubusercontent.com/minhealthnz/nz-covid-data/main/locations-of-interest/august-2021/locations-of-interest.geojson`
             ).then((res: any) => res.json());
 
+            const IDsList: string[] = [];
+            const locationsToAdd: Location[] = [];
+            let ignoredDuplicates = 0;
+            for (const location of newLocations) {
+                if (!IDsList.includes(location.properties.id)) {
+                    locationsToAdd.push(location);
+                    IDsList.push(location.properties.id);
+                } else ignoredDuplicates++;
+            }
+            console.log(`Skipped ${ignoredDuplicates} duplicates`);
+
             // make new meta object
             const metaObj: LocationMeta = {
-                number: newLocations.length,
+                number: locationsToAdd.length,
                 lastUpdated: new Date().toISOString(),
+                reset: false,
             };
 
-            this.locations = newLocations;
+            this.locations = locationsToAdd;
             this.locationsMeta = metaObj;
 
             // update files
-            fs.writeFileSync('covidData/locations.json', JSON.stringify(newLocations, null, 4));
+            fs.writeFileSync('covidData/locations.json', JSON.stringify(locationsToAdd, null, 4));
 
             return true;
         } catch (error) {
@@ -131,7 +141,10 @@ class LocationsManager {
             if (searchKey === 'Id') {
                 // so does id
                 if (typeof searchValue !== 'string' /*  || searchValue.length != 15 */) return 'Invalid ID';
-                return this.locations.filter(({ properties: { id } }) => id === searchValue);
+
+                const results = this.locations.filter(({ properties: { id } }) => id === searchValue);
+                if (results.length > 1) console.log(`Found duplicate ID entries for id ${searchValue}`);
+                return results;
             }
 
             // now we can safely enforce case

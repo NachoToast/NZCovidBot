@@ -5,7 +5,36 @@ const checkNew = async (locations: LocationsManager, client: Client, guildSettin
     const res = await locations.checkNewLocations();
 
     if (typeof res === 'string') {
-        process.exit();
+        if (res === 'fromReset') {
+            locations.updateLocalLocations();
+
+            const embed = new MessageEmbed()
+                .setColor('#ffcc00')
+                .setTitle('11/09/2021 Update')
+                .setDescription(
+                    'Duplicate location bug has been fixed. Cheers to <@152934423849992192> for pointing this out to me.'
+                )
+                .setTimestamp()
+                .setFooter(
+                    `NZ Covid Bot Announcement`,
+                    'https://cdn.discordapp.com/attachments/879001616265650207/879001636100534382/iconT.png'
+                );
+
+            // make global broadcast
+            const allGuilds = client.guilds.cache.map((e) => e.id);
+            for (const id of allGuilds) {
+                const targetChannelID = guildSettings.getChannel(id);
+                if (targetChannelID !== false) {
+                    const channel = client.channels.cache.get(targetChannelID) as TextChannel;
+                    channel.send({ embeds: [embed] });
+                }
+            }
+
+            return;
+        } else {
+            console.log(res);
+            process.exit();
+        }
     }
     if (res.length !== 0) {
         locations.updateLocalLocations(); // update stored locations
