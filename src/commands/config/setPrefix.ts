@@ -18,6 +18,8 @@ const setPrefix: Command = {
             return;
         }
 
+        args = args.map((e) => e.toLowerCase());
+
         settings.changePrefix(
             message.guildId,
             args.filter((e) => e !== 'covid')
