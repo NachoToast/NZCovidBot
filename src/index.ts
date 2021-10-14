@@ -86,7 +86,7 @@ client.on('messageCreate', async (message: Message) => {
     const [prefix, command, ...args] = message.content.split(' ');
 
     const guildPrefixes = settings.getPrefixes(message.guild.id);
-    if (guildPrefixes.indexOf(prefix.toLowerCase()) === -1 && prefix !== 'covid') return;
+    if (guildPrefixes.indexOf(prefix.toLowerCase()) === -1 && prefix.toLowerCase() !== 'covid') return;
 
     const helpMode = ['help', 'h', '?'].indexOf(command) !== -1;
     let commandToExecute: Command | undefined;
