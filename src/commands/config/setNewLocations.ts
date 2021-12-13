@@ -24,7 +24,7 @@ const setNew: Command = {
         const oldChannelID = settings.getChannel(message.guildId);
         const newChannelID = args[0] === undefined ? message.channelId : args[0].replace(/[<#>]/g, '');
 
-        if (newChannelID === 'disabled' || newChannelID === 'none') {
+        if (newChannelID === 'disabled' || newChannelID === 'none' || newChannelID === 'disable') {
             settings.changeChannel(message.guildId, false);
             message.channel.send(`No longer announcing new locations of interest.`);
             return;

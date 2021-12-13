@@ -25,8 +25,12 @@ const checkNew = async (locations: LocationsManager, client: Client, guildSettin
             for (const id of allGuilds) {
                 const targetChannelID = guildSettings.getChannel(id);
                 if (targetChannelID !== false) {
-                    const channel = client.channels.cache.get(targetChannelID) as TextChannel;
-                    channel.send({ embeds: [embed] });
+                    const channel = client.channels.cache.get(targetChannelID);
+                    if (!channel || channel.type !== 'GUILD_TEXT') {
+                        guildSettings.changeChannel(id, false);
+                    } else {
+                        (channel as TextChannel).send({ embeds: [embed] });
+                    }
                 }
             }
 
